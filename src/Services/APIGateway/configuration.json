@@ -1,0 +1,252 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/assessment/{id}/question",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/assessment/{id}/question",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddQueriesToRequests": true,
+      "UpstreamQuery": [
+        {
+          "Key": "id",
+          "Value": "{id}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/question",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/question",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/user/{email}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/user/{email}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddQueriesToRequests": true,
+      "UpstreamQuery": [
+        {
+          "Key": "id",
+          "Value": "{id}"
+        }
+      ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/user",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/user",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/user/{id}/assessment",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/user/{id}/assessment",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddQueriesToRequests": true,
+      "UpstreamQuery": [
+        {
+          "Key": "id",
+          "Value": "{id}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/user/assessment",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/user/assessment",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/users/{id}/results",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/users/{id}/results",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddQueriesToRequests": true,
+      "UpstreamQuery": [
+        {
+          "Key": "id",
+          "Value": "{id}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/users/{id}/assessment/pending",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/users/{id}/assessment/pending",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddQueriesToRequests": true,
+      "UpstreamQuery": [
+        {
+          "Key": "id",
+          "Value": "{id}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/users/{id}/assessment/completed",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/users/{id}/assessment/completed",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddQueriesToRequests": true,
+      "UpstreamQuery": [
+        {
+          "Key": "id",
+          "Value": "{id}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/users/{id}/result",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/users/{id}/result",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddQueriesToRequests": true,
+      "UpstreamQuery": [
+        {
+          "Key": "id",
+          "Value": "{id}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/users/{id}/result/score",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/users/{id}/result/score",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AddQueriesToRequests": true,
+      "UpstreamQuery": [
+        {
+          "Key": "id",
+          "Value": "{id}"
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/result",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9001
+        }
+      ],
+      "UpstreamPathTemplate": "/result",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    //phi-2
+    {
+      "UpstreamPathTemplate": "/LocalAI/phi-2",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/LocalAI/phi-2",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9003
+        }
+      ]
+    }, //judge0
+    {
+      "UpstreamPathTemplate": "/api/Submission/submit",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Submission/submit",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7250
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration",
+    "BaseUrl": "https://localhost:9005",
+    "Logging": {
+      "LogLevel": {
+        "Default": "Debug",
+        "DownstreamRouteFinder": "Debug",
+        "UpstreamRouteFinder": "Debug",
+        "Aggregator": "Debug",
+        "QoS": "Debug",
+        "LoadBalancer": "Debug",
+        "RateLimiting": "Debug",
+        "AuthenticationMiddleware": "Debug",
+        "RequestId": "Debug",
+        "HttpHandler": "Debug",
+        "RateLimit": "Debug",
+        "ServiceDiscoveryProvider": "Debug",
+        "Route": "Debug"
+      }
+    }
+  }
+}

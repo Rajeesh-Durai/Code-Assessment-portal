@@ -1,0 +1,9 @@
+﻿global using AssessmentPortal.Application.Exceptions;
+global using AssessmentPortal.Infrastructure.Data;
+global using AssessmentPortal.Infrastructure.HealthCheck;
+global using Dapper;
+global using Microsoft.Data.SqlClient;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Diagnostics.HealthChecks;
+global using System.Data;

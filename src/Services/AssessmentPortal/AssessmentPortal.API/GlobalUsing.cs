@@ -1,0 +1,14 @@
+﻿global using AssessmentPortal.API.Middlewares;
+global using AssessmentPortal.Application;
+global using AssessmentPortal.Application.Exceptions;
+global using AssessmentPortal.Application.Features.Commands;
+global using AssessmentPortal.Application.Features.Queries;
+global using AssessmentPortal.Application.ViewModels;
+global using AssessmentPortal.Domain.DTOs;
+global using AssessmentPortal.Infrastructure;
+global using AutoMapper;
+global using HealthChecks.UI.Client;
+global using MediatR;
+global using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+global using Microsoft.AspNetCore.Mvc;
+global using System.Net;
