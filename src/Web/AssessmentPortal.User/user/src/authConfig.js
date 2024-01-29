@@ -2,11 +2,11 @@ import { BrowserCacheLocation, LogLevel } from '@azure/msal-browser';
 
 export const authConfig = {
   auth: {
-    clientId: 'cb8f9a83-c59c-43b4-acba-88f8f6023434',
-    authority: 'https://login.microsoftonline.com/common',
-    tenantId:'61330b40-bb04-4d25-b959-f3700fbe6023',
-    redirectUri: 'https://code-assessment-platform.vercel.app/dashboard',
-    postLogoutRedirectUri: "https://code-assessment-platform.vercel.app",
+    clientId: 'your client id',
+    authority: 'your authority url',
+    tenantId:'your tenant id',
+    redirectUri: 'your redirect url',
+    postLogoutRedirectUri: "Logout redirect url",
   },
   cache: {
     cacheLocation: BrowserCacheLocation.SessionStorage,
